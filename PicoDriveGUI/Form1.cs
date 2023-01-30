@@ -255,7 +255,7 @@ namespace PicoDriveGUI
                         break;
 
                     case 8:
-                        MotorCurrent.Invoke((MethodInvoker)(() => MotorCurrent.Text = string_to_float(registers[++i]).ToString()));
+                        MotorCurrent.Invoke((MethodInvoker)(() => MotorCurrent.Text = registers[++i]));
                         break;
 
                     case 9:
@@ -297,7 +297,7 @@ namespace PicoDriveGUI
                         break;
 
                     case 18:
-                        SpeedReference.Invoke((MethodInvoker)(() => SpeedReference.Text = string_to_float(registers[++i]).ToString()));
+                        SpeedReference.Invoke((MethodInvoker)(() => SpeedReference.Text = registers[++i]));
                         break;
 
                     case 19:
@@ -313,7 +313,7 @@ namespace PicoDriveGUI
                         break;
 
                     case 22:
-                        AnalogInValue.Invoke((MethodInvoker)(() => AnalogInValue.Text = string_to_float(registers[++i]).ToString()));
+                        AnalogInValue.Invoke((MethodInvoker)(() => AnalogInValue.Text = registers[++i]));
                         break;
                 }
             }
