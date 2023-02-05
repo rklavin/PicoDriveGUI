@@ -229,6 +229,10 @@ namespace PicoDriveGUI
                     case 23:
                         AnalogInDeadband.Invoke((MethodInvoker)(() => AnalogInDeadband.Text = registers[++i]));
                         break;
+
+                    default:
+                        i++;
+                        break;
                 }
             }
 
