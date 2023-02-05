@@ -230,6 +230,42 @@ namespace PicoDriveGUI
                         AnalogInDeadband.Invoke((MethodInvoker)(() => AnalogInDeadband.Text = registers[++i]));
                         break;
 
+                    case 24:
+                        RunForward.Invoke((MethodInvoker)(() => RunForward.Text = registers[++i]));
+                        break;
+
+                    case 25:
+                        RunReverse.Invoke((MethodInvoker)(() => RunReverse.Text = registers[++i]));
+                        break;
+
+                    case 26:
+                        ForwardInhibit.Invoke((MethodInvoker)(() => ForwardInhibit.Text = registers[++i]));
+                        break;
+
+                    case 27:
+                        ReverseInhibit.Invoke((MethodInvoker)(() => ReverseInhibit.Text = registers[++i]));
+                        break;
+
+                    case 28:
+                        DigitalInput1Status.Invoke((MethodInvoker)(() => DigitalInput1Status.Text = registers[++i]));
+                        break;
+
+                    case 29:
+                        DigitalInput2Status.Invoke((MethodInvoker)(() => DigitalInput2Status.Text = registers[++i]));
+                        break;
+
+                    case 30:
+                        DigitalInput3Status.Invoke((MethodInvoker)(() => DigitalInput3Status.Text = registers[++i]));
+                        break;
+
+                    case 31:
+                        DigitalInput4Status.Invoke((MethodInvoker)(() => DigitalInput4Status.Text = registers[++i]));
+                        break;
+
+                    case 32:
+                        DigitalInput5Status.Invoke((MethodInvoker)(() => DigitalInput5Status.Text = registers[++i]));
+                        break;
+
                     default:
                         i++;
                         break;
@@ -532,6 +568,11 @@ namespace PicoDriveGUI
                     e.Handled = true;
                 }
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -29,36 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.baudRateComboBox = new System.Windows.Forms.ComboBox();
@@ -130,6 +104,19 @@
             this.SpeedReferenceRegisterSet = new System.Windows.Forms.TextBox();
             this.SpeedReferenceSource = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ReverseInhibit = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.ForwardInhibit = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.RunReverse = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.RunForward = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.DigitalInput5Status = new System.Windows.Forms.TextBox();
+            this.DigitalInput4Status = new System.Windows.Forms.TextBox();
+            this.DigitalInput3Status = new System.Windows.Forms.TextBox();
+            this.DigitalInput2Status = new System.Windows.Forms.TextBox();
+            this.DigitalInput1Status = new System.Windows.Forms.TextBox();
             this.DigitalFunction1Set = new System.Windows.Forms.ComboBox();
             this.DigitalFunction2Set = new System.Windows.Forms.ComboBox();
             this.DigitalFunction3Set = new System.Windows.Forms.ComboBox();
@@ -175,8 +162,6 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -187,223 +172,30 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.printToolStripMenuItem,
-            this.printPreviewToolStripMenuItem,
-            this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
-            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
-            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.selectAllToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customizeToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // customizeToolStripMenuItem
-            // 
-            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.optionsToolStripMenuItem.Text = "&Options";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contentsToolStripMenuItem,
-            this.indexToolStripMenuItem,
-            this.searchToolStripMenuItem,
-            this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // contentsToolStripMenuItem
-            // 
-            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.contentsToolStripMenuItem.Text = "&Contents";
-            // 
-            // indexToolStripMenuItem
-            // 
-            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.indexToolStripMenuItem.Text = "&Index";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.searchToolStripMenuItem.Text = "&Search";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
-            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // label3
@@ -1118,6 +910,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.ReverseInhibit);
+            this.tabPage2.Controls.Add(this.label56);
+            this.tabPage2.Controls.Add(this.ForwardInhibit);
+            this.tabPage2.Controls.Add(this.label55);
+            this.tabPage2.Controls.Add(this.RunReverse);
+            this.tabPage2.Controls.Add(this.label54);
+            this.tabPage2.Controls.Add(this.RunForward);
+            this.tabPage2.Controls.Add(this.label53);
+            this.tabPage2.Controls.Add(this.DigitalInput5Status);
+            this.tabPage2.Controls.Add(this.DigitalInput4Status);
+            this.tabPage2.Controls.Add(this.DigitalInput3Status);
+            this.tabPage2.Controls.Add(this.DigitalInput2Status);
+            this.tabPage2.Controls.Add(this.DigitalInput1Status);
             this.tabPage2.Controls.Add(this.DigitalFunction1Set);
             this.tabPage2.Controls.Add(this.DigitalFunction2Set);
             this.tabPage2.Controls.Add(this.DigitalFunction3Set);
@@ -1160,6 +965,114 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "I/O";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // ReverseInhibit
+            // 
+            this.ReverseInhibit.Location = new System.Drawing.Point(370, 172);
+            this.ReverseInhibit.Name = "ReverseInhibit";
+            this.ReverseInhibit.ReadOnly = true;
+            this.ReverseInhibit.Size = new System.Drawing.Size(100, 23);
+            this.ReverseInhibit.TabIndex = 135;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(370, 154);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(84, 15);
+            this.label56.TabIndex = 134;
+            this.label56.Text = "Reverse Inhibit";
+            // 
+            // ForwardInhibit
+            // 
+            this.ForwardInhibit.Location = new System.Drawing.Point(370, 128);
+            this.ForwardInhibit.Name = "ForwardInhibit";
+            this.ForwardInhibit.ReadOnly = true;
+            this.ForwardInhibit.Size = new System.Drawing.Size(100, 23);
+            this.ForwardInhibit.TabIndex = 133;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(370, 110);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(87, 15);
+            this.label55.TabIndex = 132;
+            this.label55.Text = "Forward Inhibit";
+            // 
+            // RunReverse
+            // 
+            this.RunReverse.Location = new System.Drawing.Point(370, 84);
+            this.RunReverse.Name = "RunReverse";
+            this.RunReverse.ReadOnly = true;
+            this.RunReverse.Size = new System.Drawing.Size(100, 23);
+            this.RunReverse.TabIndex = 131;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(370, 66);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(71, 15);
+            this.label54.TabIndex = 130;
+            this.label54.Text = "Run Reverse";
+            // 
+            // RunForward
+            // 
+            this.RunForward.Location = new System.Drawing.Point(370, 40);
+            this.RunForward.Name = "RunForward";
+            this.RunForward.ReadOnly = true;
+            this.RunForward.Size = new System.Drawing.Size(100, 23);
+            this.RunForward.TabIndex = 129;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(370, 22);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(74, 15);
+            this.label53.TabIndex = 128;
+            this.label53.Text = "Run Forward";
+            // 
+            // DigitalInput5Status
+            // 
+            this.DigitalInput5Status.Location = new System.Drawing.Point(262, 216);
+            this.DigitalInput5Status.Name = "DigitalInput5Status";
+            this.DigitalInput5Status.ReadOnly = true;
+            this.DigitalInput5Status.Size = new System.Drawing.Size(50, 23);
+            this.DigitalInput5Status.TabIndex = 127;
+            // 
+            // DigitalInput4Status
+            // 
+            this.DigitalInput4Status.Location = new System.Drawing.Point(262, 172);
+            this.DigitalInput4Status.Name = "DigitalInput4Status";
+            this.DigitalInput4Status.ReadOnly = true;
+            this.DigitalInput4Status.Size = new System.Drawing.Size(50, 23);
+            this.DigitalInput4Status.TabIndex = 126;
+            // 
+            // DigitalInput3Status
+            // 
+            this.DigitalInput3Status.Location = new System.Drawing.Point(262, 128);
+            this.DigitalInput3Status.Name = "DigitalInput3Status";
+            this.DigitalInput3Status.ReadOnly = true;
+            this.DigitalInput3Status.Size = new System.Drawing.Size(50, 23);
+            this.DigitalInput3Status.TabIndex = 125;
+            // 
+            // DigitalInput2Status
+            // 
+            this.DigitalInput2Status.Location = new System.Drawing.Point(262, 84);
+            this.DigitalInput2Status.Name = "DigitalInput2Status";
+            this.DigitalInput2Status.ReadOnly = true;
+            this.DigitalInput2Status.Size = new System.Drawing.Size(50, 23);
+            this.DigitalInput2Status.TabIndex = 124;
+            // 
+            // DigitalInput1Status
+            // 
+            this.DigitalInput1Status.Location = new System.Drawing.Point(262, 40);
+            this.DigitalInput1Status.Name = "DigitalInput1Status";
+            this.DigitalInput1Status.ReadOnly = true;
+            this.DigitalInput1Status.Size = new System.Drawing.Size(50, 23);
+            this.DigitalInput1Status.TabIndex = 123;
             // 
             // DigitalFunction1Set
             // 
@@ -1278,7 +1191,7 @@
             // 
             // AnalogInDeadbandSet
             // 
-            this.AnalogInDeadbandSet.Location = new System.Drawing.Point(288, 172);
+            this.AnalogInDeadbandSet.Location = new System.Drawing.Point(8, 392);
             this.AnalogInDeadbandSet.Name = "AnalogInDeadbandSet";
             this.AnalogInDeadbandSet.Size = new System.Drawing.Size(100, 23);
             this.AnalogInDeadbandSet.TabIndex = 117;
@@ -1286,7 +1199,7 @@
             // 
             // AnalogInMinSet
             // 
-            this.AnalogInMinSet.Location = new System.Drawing.Point(288, 128);
+            this.AnalogInMinSet.Location = new System.Drawing.Point(8, 348);
             this.AnalogInMinSet.Name = "AnalogInMinSet";
             this.AnalogInMinSet.Size = new System.Drawing.Size(100, 23);
             this.AnalogInMinSet.TabIndex = 116;
@@ -1294,7 +1207,7 @@
             // 
             // AnalogInZeroSet
             // 
-            this.AnalogInZeroSet.Location = new System.Drawing.Point(288, 84);
+            this.AnalogInZeroSet.Location = new System.Drawing.Point(8, 304);
             this.AnalogInZeroSet.Name = "AnalogInZeroSet";
             this.AnalogInZeroSet.Size = new System.Drawing.Size(100, 23);
             this.AnalogInZeroSet.TabIndex = 115;
@@ -1302,7 +1215,7 @@
             // 
             // AnalogInDeadband
             // 
-            this.AnalogInDeadband.Location = new System.Drawing.Point(414, 171);
+            this.AnalogInDeadband.Location = new System.Drawing.Point(134, 391);
             this.AnalogInDeadband.Name = "AnalogInDeadband";
             this.AnalogInDeadband.ReadOnly = true;
             this.AnalogInDeadband.Size = new System.Drawing.Size(100, 23);
@@ -1311,7 +1224,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(520, 174);
+            this.label44.Location = new System.Drawing.Point(240, 394);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(14, 15);
             this.label44.TabIndex = 113;
@@ -1319,7 +1232,7 @@
             // 
             // AnalogInMin
             // 
-            this.AnalogInMin.Location = new System.Drawing.Point(414, 127);
+            this.AnalogInMin.Location = new System.Drawing.Point(134, 347);
             this.AnalogInMin.Name = "AnalogInMin";
             this.AnalogInMin.ReadOnly = true;
             this.AnalogInMin.Size = new System.Drawing.Size(100, 23);
@@ -1328,7 +1241,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(520, 130);
+            this.label43.Location = new System.Drawing.Point(240, 350);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(14, 15);
             this.label43.TabIndex = 111;
@@ -1336,7 +1249,7 @@
             // 
             // AnalogInZero
             // 
-            this.AnalogInZero.Location = new System.Drawing.Point(414, 83);
+            this.AnalogInZero.Location = new System.Drawing.Point(134, 303);
             this.AnalogInZero.Name = "AnalogInZero";
             this.AnalogInZero.ReadOnly = true;
             this.AnalogInZero.Size = new System.Drawing.Size(100, 23);
@@ -1345,7 +1258,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(520, 86);
+            this.label42.Location = new System.Drawing.Point(240, 306);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(14, 15);
             this.label42.TabIndex = 109;
@@ -1353,7 +1266,7 @@
             // 
             // AnalogInMax
             // 
-            this.AnalogInMax.Location = new System.Drawing.Point(414, 40);
+            this.AnalogInMax.Location = new System.Drawing.Point(134, 260);
             this.AnalogInMax.Name = "AnalogInMax";
             this.AnalogInMax.ReadOnly = true;
             this.AnalogInMax.Size = new System.Drawing.Size(100, 23);
@@ -1362,7 +1275,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(520, 43);
+            this.label41.Location = new System.Drawing.Point(240, 263);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(14, 15);
             this.label41.TabIndex = 107;
@@ -1370,7 +1283,7 @@
             // 
             // AnalogInMaxSet
             // 
-            this.AnalogInMaxSet.Location = new System.Drawing.Point(288, 40);
+            this.AnalogInMaxSet.Location = new System.Drawing.Point(8, 260);
             this.AnalogInMaxSet.Name = "AnalogInMaxSet";
             this.AnalogInMaxSet.Size = new System.Drawing.Size(100, 23);
             this.AnalogInMaxSet.TabIndex = 106;
@@ -1379,7 +1292,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(394, 175);
+            this.label39.Location = new System.Drawing.Point(114, 395);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(14, 15);
             this.label39.TabIndex = 104;
@@ -1388,7 +1301,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(288, 154);
+            this.label40.Location = new System.Drawing.Point(8, 374);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(115, 15);
             this.label40.TabIndex = 103;
@@ -1397,7 +1310,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(394, 131);
+            this.label33.Location = new System.Drawing.Point(114, 351);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(14, 15);
             this.label33.TabIndex = 99;
@@ -1406,7 +1319,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(288, 110);
+            this.label34.Location = new System.Drawing.Point(8, 330);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(112, 15);
             this.label34.TabIndex = 98;
@@ -1415,7 +1328,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(394, 87);
+            this.label31.Location = new System.Drawing.Point(114, 307);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(14, 15);
             this.label31.TabIndex = 97;
@@ -1424,7 +1337,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(288, 66);
+            this.label32.Location = new System.Drawing.Point(8, 286);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(115, 15);
             this.label32.TabIndex = 96;
@@ -1433,7 +1346,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(394, 43);
+            this.label29.Location = new System.Drawing.Point(114, 263);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(14, 15);
             this.label29.TabIndex = 95;
@@ -1442,7 +1355,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(288, 22);
+            this.label30.Location = new System.Drawing.Point(8, 242);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(114, 15);
             this.label30.TabIndex = 94;
@@ -1636,33 +1549,8 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
-        private ToolStripMenuItem newToolStripMenuItem;
-        private ToolStripMenuItem openToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator;
-        private ToolStripMenuItem saveToolStripMenuItem;
-        private ToolStripMenuItem saveAsToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem printToolStripMenuItem;
-        private ToolStripMenuItem printPreviewToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem editToolStripMenuItem;
-        private ToolStripMenuItem undoToolStripMenuItem;
-        private ToolStripMenuItem redoToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator3;
-        private ToolStripMenuItem cutToolStripMenuItem;
-        private ToolStripMenuItem copyToolStripMenuItem;
-        private ToolStripMenuItem pasteToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator4;
-        private ToolStripMenuItem selectAllToolStripMenuItem;
-        private ToolStripMenuItem toolsToolStripMenuItem;
-        private ToolStripMenuItem customizeToolStripMenuItem;
-        private ToolStripMenuItem optionsToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
-        private ToolStripMenuItem contentsToolStripMenuItem;
-        private ToolStripMenuItem indexToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator5;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private Label label3;
         private ComboBox baudRateComboBox;
@@ -1769,5 +1657,18 @@
         private TextBox MotorCurrentLimitSet;
         private Label label52;
         private Button ReadRegistersButton;
+        private TextBox ReverseInhibit;
+        private Label label56;
+        private TextBox ForwardInhibit;
+        private Label label55;
+        private TextBox RunReverse;
+        private Label label54;
+        private TextBox RunForward;
+        private Label label53;
+        private TextBox DigitalInput5Status;
+        private TextBox DigitalInput4Status;
+        private TextBox DigitalInput3Status;
+        private TextBox DigitalInput2Status;
+        private TextBox DigitalInput1Status;
     }
 }
