@@ -9,6 +9,7 @@ namespace PicoDriveGUI
         bool serialMonitor = false;
 
         bool MotorEnable = false;
+        bool streamRegisters = false;
 
         public Form1()
         {
@@ -366,7 +367,23 @@ namespace PicoDriveGUI
         {
             if (serialPort.IsOpen)
             {
-                serialPort.WriteLine("streamregs");
+                if (!streamRegisters)
+                {
+                    serialPort.WriteLine("streamregs on");
+                    ReadRegistersButton.Text = "Stop Stream";
+                    streamRegisters = true;
+                }
+                else
+                {
+                    serialPort.WriteLine("streamregs off");
+                    ReadRegistersButton.Text = "Read Registers";
+                    streamRegisters = false;
+                }
+            }
+            else
+            {
+                streamRegisters = false;
+                ReadRegistersButton.Text = "Read Registers";
             }
         }
 
